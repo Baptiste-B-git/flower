@@ -28,10 +28,21 @@ nav{
     color: white;
     margin: 0 30px;
 }
-a:hover{
-    border-bottom: white 1px solid;
-    padding-bottom: 4px;
+.item-nav::after{
+    content: "";
+    display: block;
+    width: 0px;
+    margin: 5px auto 0 auto;
+    height: 2px;
+    border-radius: 2px;
+    background: #aaa;
+    transition: width 0.2s ease-out;
 }
+
+.item-nav:hover::after{
+    width: 60%;
+}
+
 .logo{
     width:50px;
     position: absolute;
@@ -61,26 +72,73 @@ a:hover{
     text-align: center;
   }
 
-  .h1-vert{
+.h1-vert{
     color: rgb(184, 219, 54);
  }
 
- /* Footer */
- .content {
+ /* Accueil 2 */
+.content {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .info-accueil {
+.info-accueil {
     background: #333;
     padding: 20px;
     text-align: center;
   }
-  .text-footer{
+.text-footer{
     color: white;
   }
-  .text-footer-vert{
+.text-footer-vert{
     color: rgb(184, 219, 54);
-  }
+}
+
+/* Galerie */
+
+h2{
+    text-align: center;
+    color: #333;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.galerie{
+    width: 80%;
+    max-width: 1300px;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden; /* cache ce qui depasse */
+    flex-shrink: 0; /* interdire de rétrécir */
+    border-radius: 20px;
+    
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+}
+.item:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
+    transition: all 0.5s  ;
+
+}
+
+h3{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-top: 30px;
+}
