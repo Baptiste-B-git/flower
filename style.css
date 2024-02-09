@@ -68,7 +68,7 @@ nav{
   align-items: center;
   height: 80vh;
   background: midnightblue;
-  background-image: url('ressources/jardin.jpg');
+  background-image: url('ressources/maison1900px.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -89,7 +89,7 @@ h1 {
 
 .info-accueil {
   background: #333;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
 }
 .text-accueil{
