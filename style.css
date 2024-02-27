@@ -50,7 +50,7 @@ nav{
   color: white;
   /* margin: 0 30px; */
 }
-.item-nav::after{
+/* .item-nav::after{
   content: "";
   display: block;
   width: 0px;
@@ -63,13 +63,13 @@ nav{
 
 .item-nav:hover::after{
   width: 60%;
-}
+} */
 
 .logo{
   border-radius: 50px;
   width:50px;
   margin-top: 20px;
-
+  /* left: 10px; */
 }
 
  @media screen and (max-width: 650px) {
